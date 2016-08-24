@@ -1,0 +1,11 @@
+Looking at the plots below is the analysis:
+
+1. Some plots have the fitted values as per the equation Adj Close ~ Open+High+Low+Close+Volume.   By using this equation in the linear model the normal QQplot  is bimodel and skewed.
+
+The residuals vs leverage plot also not proper with many of the fitted values are in the high end. This reflects that many of the predictors are not positively correlated and there are presence of outliers.
+
+2. Therefore I have changed the model using the equation Adj Close ~ Open+Close+Volume.
+The plots Rplot_twitter, Rplot1_twitter, Rplot2_twitter, Rplot4_twitter are proper.
+These plots are proper with less outliers and residuals vs fitted have datapoints properly located within low to medium values.
+
+
